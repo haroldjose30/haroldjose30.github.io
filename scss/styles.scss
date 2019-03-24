@@ -576,6 +576,43 @@ footer {
     -------------------------------
 */
 
+#professionaldevelopment {
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid $border;
+    text-align: center;
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+}
+
+
+.professionaldevelopment-block {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px solid $border;
+    text-align: left;
+
+    h3 {
+        font-weight: 500;
+        float: left;
+        margin: 0;
+        color: $heading;
+    }
+
+    h4 {
+        color: $text;
+        clear: both;
+        font-weight: 500;
+        margin: 0 0 15px 0;
+    }
+ 
+}
+
+
+
 #education {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
@@ -700,6 +737,7 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
+    background: $background-alt;
 
     h2 {
         color: $heading;
@@ -730,8 +768,9 @@ footer {
     max-width: 1000px;
     margin: 0 auto 30px auto;
     padding: 10px;
-    border: 1px solid $border;
+    border: 0px solid $border;
     text-align: left;
+    background: $background;
 
     h3 {
         font-weight: 500;
@@ -739,18 +778,6 @@ footer {
         margin: 5px;
         color: $heading;
         text-align: right;
-    }
-
-    span {
-        color: $text;
-        float: right;
-    }
-
-    h4 {
-        color: $text;
-        clear: both;
-        font-weight: 500;
-        margin: 0 0 15px 0;
     }
 
     p, ul {
