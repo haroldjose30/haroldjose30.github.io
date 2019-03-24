@@ -34,7 +34,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #2d7931; //#3498db;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -292,6 +292,32 @@ footer {
     }
 }
 
+.social-about {
+    text-align: center;
+
+    ul {
+        margin: 5px 0 0 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+        font-size: 1.25em;
+        list-style: none;
+    }
+
+
+    a {
+        display: block;
+        color: $text;
+        padding: 10px;
+
+        &:hover {
+            color: $base-color;
+        }
+    }
+}
+
 .btn-rounded-white {
     display: inline-block;
     color: #fff;
@@ -350,7 +376,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/lead-bg.png);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -576,43 +602,6 @@ footer {
     -------------------------------
 */
 
-#professionaldevelopment {
-    padding: 50px 15px 20px 15px;
-    border-bottom: 1px solid $border;
-    text-align: center;
-
-    h2 {
-        color: $heading;
-        margin-bottom: 50px;
-    }
-}
-
-
-.professionaldevelopment-block {
-    max-width: 700px;
-    margin: 0 auto 30px auto;
-    padding: 15px;
-    border: 1px solid $border;
-    text-align: left;
-
-    h3 {
-        font-weight: 500;
-        float: left;
-        margin: 0;
-        color: $heading;
-    }
-
-    h4 {
-        color: $text;
-        clear: both;
-        font-weight: 500;
-        margin: 0 0 15px 0;
-    }
- 
-}
-
-
-
 #education {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
@@ -674,6 +663,7 @@ footer {
     padding: 50px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
+    background: $background;
 
     h2 {
         color: $heading;
@@ -737,7 +727,7 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
-    background: $background-alt;
+    background: $background;
 
     h2 {
         color: $heading;
