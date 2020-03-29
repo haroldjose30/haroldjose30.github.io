@@ -25,7 +25,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trail Project</title>
+    <title>RDS Web Project</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -35,10 +35,10 @@
 
     <style>
         div.gallery {
-            margin: 5px;
+            margin: 10px;
             border: 1px solid #ccc;
             float: left;
-            width: 530px;
+            width: 500px;
         }
 
         div.gallery:hover {
@@ -48,40 +48,8 @@
         div.gallery img {
             width: 100%;
             height: 100%;
+            padding: 3px;
         }
-
-        div.gallery1 {
-            margin: 5px;
-            border: 1px solid #ccc;
-            float: left;
-            width: 180px;
-        }
-
-        div.gallery1:hover {
-            border: 1px solid #777;
-        }
-
-        div.gallery1 img {
-            width: 100%;
-            height: 100%;
-        }
-
-        div.gallery2 {
-            margin: 5px;
-            border: 1px solid #ccc;
-            float: left;
-            width: 530px;
-        }
-
-        div.gallery2:hover {
-            border: 1px solid #777;
-        }
-
-        div.gallery2 img {
-            width: 200%;
-            height: 200%;
-        }
-
 
         div.desc {
             padding: 15px;
@@ -89,13 +57,12 @@
             color: white;
         }
 
-        
         #lead {
             position: relative;
             height: 100vh;
             min-height: 500px;
             max-height: 1080px;
-            background: url(./images/projects/trail/banner.png);
+            background: url(./images/projects/rds/plc_integration.jpg);
             background-size: cover;
             padding: 15px;
             overflow: hidden;
@@ -141,8 +108,8 @@
 
     <div id="lead">
         <div id="lead-content">
-            <h1>TRAIL</h1>
-            <h2>Android Xamarin app</h2>
+            <h1>RDS Web</h1>
+            <h2>Asp.net Core</h2>
         </div>
         <!-- End #lead-content -->
 
@@ -166,8 +133,18 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Trail is a WMS-Warehouse Management System, Shop Floor and inventory app integrated with ERP
-                        Totvs/Protheus.
+                        The RDS(Reception and Dispatch System) is a Webapp for receiving and shipping grain in ports and warehouses. This system controls the entry, loading, quality analysis, unloading and exit of trucks at the port and warehouse. It was developed in asp.net core mvc on the frontend, and asp.net core webapi on the backend.
+                    </p>
+                </div>
+            </div>
+        </br>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">Responsabilities</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        As Fullstack .net developer my responsibilities were to perform maintenance on the frontend, backend,create new features, and improvements on integrations with Plc devices, serial port devices and RFID Devices.
                     </p>
                 </div>
             </div>
@@ -176,118 +153,113 @@
     <!-- End #about -->
 
 
-
     <div id="skills">
         <h2 class="heading">Technologies</h2>
 
         <div class="skills-block,center">
             <ul>
-                <li>C#</li>
-                <li>Xamarin Forms</li>
-                <li>Android</li>
+                <li>Asp.net Core MVC</li>
                 <li>Asp.net Core WebApi</li>
-                <li>Rest</li>
+                <li>Razor</li>
+                <li>jQuery</li>
+                <li>Javascript</li>
+                <li>C#</li>
                 <li>Microsoft Sql Server</li>
-                <li>Oracle Database</li>
                 <li>Dapper</li>
-                <li>Stored Procedure</li>
-                <li>PlSql</li>
-                <li>Erwin Data Modeller</li>
-                <li>ERP Totvs Prothesu</li>
-                <li>AdvPL-Advanced Protheus Language</li>
-                <li>Git/GitLab</li>
+                <li>Swagger</li>
+                <li>Git/Git Flow</li>
+                <li>GitHub Enterprise</li>
+                <li>PLC/Modbus Integration</li>
+                <li>RFID Tag Integratino</li>     
+                <li>Serial Port Integration</li>
+                <li>Automated Test</li>
+                <li>Selenium WebDriver</li>
+                <li>DDD-Domain Driven Design</li>
+                
             </ul>
         </div>
     </div>
     <!-- End #skills -->
 
-
     <div id="contact">
         <h2>Screenshots</h2>
         <div class="container">
+            <div class="gallery">
+                <div class="desc">Login Screen</div>
+                <a target="_blank" href="images/projects/rds/login.png">
+                    <img src="./images/projects/rds/login.png" alt="Login Screen">
+                </a>
+            </div>
 
             <div class="gallery">
                 <div class="desc">Main Screen</div>
-                <a target="_blank" href="images/projects/trail/banner.png">
-                    <img src="images/projects/trail/banner.png" alt="MainScreen" width="600" height="400">
+                <a target="_blank" href="images/projects/rds/position_vehicles.png">
+                    <img src="./images/projects/rds/position_vehicles.png" alt="Main Screen">
                 </a>
             </div>
 
-            <div class="gallery1">
-                <div class="desc">Checkout Screen 1</div>
-                <a target="_blank" href="images/projects/trail/screen0.png">
-                    <img src="images/projects/trail/screen0.png" alt="Checkout Screen 1" width="600" height="400">
+            <div class="gallery">
+                <div class="desc">Truck register and RFID integration</div>
+                <a target="_blank" href="images/projects/rds/rfid_integration.jpg">
+                    <img src="images/projects/rds/rfid_integration.jpg" alt="Truck register">
+                </a>
+                <a target="_blank" href="images/projects/rds/truck_register.png">
+                    <img src="images/projects/rds/truck_register.png" alt="Truck register">
                 </a>
             </div>
 
-            <div class="gallery1">
-                <div class="desc">Checkout Screen 2</div>
-                <a target="_blank" href="images/projects/trail/screen1.png">
-                    <img src="images/projects/trail/screen1.png" alt="Checkout Screen 2" width="600" height="400">
+            <div class="gallery">
+                <div class="desc">Automated Grain Analysis integration by Serial Port</div>
+                <a target="_blank" href="images/projects/rds/grain_analysis_computer.jpg">
+                    <img class="image1" src="images/projects/rds/grain_analysis_computer.jpg" alt="Grain Analysis" >
+                </a>
+                <a target="_blank" href="images/projects/rds/grain_analysis.png">
+                    <img src="images/projects/rds/grain_analysis.png" alt="Grain Analysis">
                 </a>
             </div>
 
-            <div class="gallery2">
-                <div class="desc">Data Colector Video Demonstration</div>
-                <iframe src="https://www.youtube.com/embed/uk_pKytN3Fc" width="530" height="400"></iframe>
+            <div class="gallery">
+                <div class="desc">Automated weighing integration by PLC/Modbus</div>
+                <a target="_blank" href="images/projects/rds/plc_integration.jpg">
+                    <img src="images/projects/rds/plc_integration.jpg" alt="Automated weighing">
+                </a>
+                <a target="_blank" href="./images/projects/rds/main_dashboard.png">
+                    <img src="./images/projects/rds/automated_weighing.png" alt="Automated weighing">
+                </a>
+            </div>
+
+            <div class="gallery">
+                <div class="desc">Trainweigh integration by serial port</div>
+                <a target="_blank" href="images/projects/rds/Trainweigh.jpeg">
+                    <img src="images/projects/rds/Trainweigh.jpeg" alt="assisted_weighing">
+                </a>
+                <a target="_blank" href="images/projects/rds/assisted_weighing.png">
+                    <img src="images/projects/rds/assisted_weighing.png" alt="assisted_weighing">
+                </a>
             </div>
         </div>
     </div>
     <!-- End #contact -->
 
-
     <div id="skills">
-        <h2 class="heading">Customers</h2>
-
-        <div class="skills-block">
+        <h2 class="heading">Customer</h2>
+        <div class="skills-block,center">
             <ul>
                 <li>
-                    <a href="https://poai-br.negocio.site">
-                        <img src="images/projects/trail/Logo/plasticomnium.jpeg" alt="Plastic Omnium" width="100"
-                            height="100" class="center">
-                    </a>
-
-                </li>
-                <li>
-                    <a href="http://www.stobag.com.br">
-                        <img src="images/projects/trail/Logo/stobag.jpg" alt="Stobag" width="200" height="100"
-                            class="center">
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.fibradobrasil.com.br">
-                        <img src="images/projects/trail/Logo/fibra.png" alt="Fibra" width="200" height="100"
-                            class="center">
-                    </a>
-                </li>
-                <li> <a href="http://www.futuragro.com.br">
-                        <img src="images/projects/trail/Logo/futuragro.png" alt="Futuragro" width="150" height="150"
-                            class="center">
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.sanibras.com.br">
-                        <img src="images/projects/trail/Logo/sanibras.png" alt="Sanibras" width="200" height="100"
-                            class="center">
-                    </a>
-
-                </li>
-                <li>
-                    <a href="http://www.witzenmann.com.br">
-                        <img src="images/projects/trail/Logo/witzenmann.jpg" alt="Witzenmann" width="250" height="100"
-                            class="center">
+                    <a href="https://www.cargillargentina.com.ar/">
+                        <img src="images/projects/rds/logo/cargill.png" alt="Plastic Omnium" width="434"
+                            height="137" class="center">
                     </a>
                 </li>
             </ul>
         </div>
-
         <h2 class="heading">Employer</h2>
         <div class="skills-block,center">
             <ul>
                 <li>
-                    <a href="http://www.rsacsolucoes.com.br/">
-                        <img src="images/projects/minervamobile/logo/rsac.png" alt="RSAC" idth="426"
-                        height="164" class="center">
+                    <a href="https://samcorp.com.br/site/">
+                        <img src="images/projects/rds/logo/samcorp.png" alt="Plastic Omnium" width="434"
+                            height="137" class="center">
                     </a>
                 </li>
             </ul>
@@ -299,7 +271,7 @@
         <div id="education">
             <h2 class="heading">Source Code</h2>
             <div class="education-block">
-                <h3>Private on Gitlab</h3>
+                <h3>Private on GitHub Enterprise</h3>
                 <h4>not avaliable by company.</h4>
             </div>
             <!-- End .education-block -->
