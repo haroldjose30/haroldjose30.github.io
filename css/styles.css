@@ -334,6 +334,37 @@ footer {
   color: #74808a;
   margin: 0;
 }
+#highlights {
+  padding: 50px 15px 35px 15px;
+  text-align: center;
+  border-bottom: 1px solid #dcd9d9;
+}
+#highlights .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+#highlights .row > div {
+  display: flex;
+  margin-bottom: 30px;
+}
+.stat-tile {
+  background: #fff;
+  border-top: 4px solid #2d7931;
+  border-radius: 4px;
+  padding: 30px 10px;
+  width: 100%;
+}
+.stat-tile h2 {
+  color: #2d7931;
+  font-weight: 700;
+  font-size: 2.5em;
+  margin: 0 0 10px 0;
+}
+.stat-tile p {
+  color: #74808a;
+  font-size: 0.9em;
+  margin: 0;
+}
 #experience {
   padding: 50px 15px;
   text-align: center;
